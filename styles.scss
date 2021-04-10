@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+// primary colors
+$Very-Dark-Magenta: hsl(300, 43%, 22%);
+$Soft-Pink: hsl(333, 80%, 67%);
+
+// neutral colors
+$Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+$Light-Grayish-Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  line-height: 1.35;
+}
+
+// global style
+
+h1,
+span {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+p {
+  font-weight: 400;
+}
+span {
+  font-size: 0.9rem;
+}
+
+// starts here
+.landing-page {
+  width: 90%;
+  margin: 4rem auto;
+  text-align: center;
+
+  .row {
+    .intro {
+      h1 {
+        color: $Very-Dark-Magenta;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        color: $Dark-Grayish-Magenta;
+        margin-bottom: 2rem;
+        font-weight: 500;
+      }
+    }
+
+    .rating {
+      margin-bottom: 2.5rem;
+
+      .rates {
+        padding: 1rem 3rem;
+        margin-bottom: 1rem;
+        background-color: $Light-Grayish-Magenta;
+
+        .star {
+          margin-bottom: 0.5rem;
+          img {
+            margin: 0 0.15rem;
+          }
+        }
+        .rate {
+          color: $Very-Dark-Magenta;
+        }
+      }
+    }
+
+    // same value style
+    .rates,
+    .testimonial {
+      border-radius: 0.5rem;
+    }
+
+    // row 2
+    .testimonial {
+      background-color: $Very-Dark-Magenta;
+      padding: 2rem;
+      margin-bottom: 1rem;
+
+      .user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        img {
+          width: 2.5rem;
+          margin-right: 1.3rem;
+          border-radius: 50%;
+          box-shadow: 0 0 0.5rem 0 $Soft-Pink;
+        }
+        .info {
+          h4 {
+            color: white;
+            margin-bottom: 0.2rem;
+          }
+          p {
+            color: $Soft-Pink;
+            font-size: 0.85rem;
+          }
+        }
+      }
+
+      .testi {
+        text-align: left;
+        p {
+          color: $White;
+          font-size: 0.95rem;
+          line-height: 1.6;
+        }
+      }
+    }
+
+    @media screen and (min-width: 76.5625rem) {
+      display: flex;
+      gap: 1.5rem;
+      text-align: left;
+      margin: 0 auto;
+      .intro,
+      .rating {
+        flex: 1;
+      }
+
+      .intro {
+        h1 {
+          font-size: 2rem;
+          line-height: 1.1;
+        }
+      }
+
+      .rating {
+        .rates {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .star {
+            margin: 0 0.8rem 0 0;
+            img {
+              margin: 0 0.1rem 0 0;
+            }
+          }
+        }
+
+        .review {
+          margin-right: 6rem;
+        }
+        .guru {
+          margin-left: 3rem;
+          margin-right: 3rem;
+        }
+        .best-tech {
+          margin-left: 6rem;
+        }
+      }
+
+      .colton,
+      .irene,
+      .anne {
+        max-height: 15.625rem;
+      }
+
+      .colton {
+        margin-bottom: 2rem;
+      }
+      .irene {
+        margin-top: 1rem;
+      }
+      .anne {
+        margin-top: 2rem;
+        margin-bottom: -0.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 76.5625rem) {
+    min-height: 100vh;
+    margin: 4rem auto 0;
+  }
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: $Very-Dark-Magenta;
+  border-radius: 0.5rem 0.5rem 0 0;
+  .attribution {
+    color: $White;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0 auto;
+    a {
+      color: $Soft-Pink;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 33.75rem) {
+      max-width: 70%;
+    }
+  }
+}
