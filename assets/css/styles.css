@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.35;
+}
+
+h1,
+span {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-weight: 400;
+}
+
+span {
+  font-size: 0.9rem;
+}
+
+.landing-page {
+  width: 90%;
+  margin: 4rem auto;
+  text-align: center;
+  background: url(./images/bg-pattern-top-mobile.svg) left top no-repeat, url(./images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+}
+
+.landing-page .row .intro h1 {
+  color: #502050;
+  margin-bottom: 1.5rem;
+}
+
+.landing-page .row .intro p {
+  color: #937b92;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.landing-page .row .rating {
+  margin-bottom: 2.5rem;
+}
+
+.landing-page .row .rating .rates {
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+  background-color: #f7f2f7;
+}
+
+.landing-page .row .rating .rates .star {
+  margin-bottom: 0.5rem;
+}
+
+.landing-page .row .rating .rates .star img {
+  margin: 0 0.15rem;
+}
+
+.landing-page .row .rating .rates .rate {
+  color: #502050;
+}
+
+.landing-page .row .rates,
+.landing-page .row .testimonial {
+  border-radius: 0.5rem;
+}
+
+.landing-page .row .testimonial {
+  background-color: #502050;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.landing-page .row .testimonial .user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.landing-page .row .testimonial .user img {
+  width: 2.5rem;
+  margin-right: 1.3rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem 0 #ee68a4;
+}
+
+.landing-page .row .testimonial .user .info h4 {
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.landing-page .row .testimonial .user .info p {
+  color: #ee68a4;
+  font-size: 0.85rem;
+}
+
+.landing-page .row .testimonial .testi {
+  text-align: left;
+}
+
+.landing-page .row .testimonial .testi p {
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 76.5625rem) {
+  .landing-page .row {
+    display: flex;
+    gap: 1.5rem;
+    text-align: left;
+    margin: 0 auto;
+    background: url("./images/bg-pattern-top-desktop.svg") left top no-repeat, url("./images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+  }
+  .landing-page .row .intro,
+  .landing-page .row .rating {
+    flex: 1;
+  }
+  .landing-page .row .intro h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  .landing-page .row .rating .rates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .landing-page .row .rating .rates .star {
+    margin: 0 0.8rem 0 0;
+  }
+  .landing-page .row .rating .rates .star img {
+    margin: 0 0.1rem 0 0;
+  }
+  .landing-page .row .rating .review {
+    margin-right: 6rem;
+  }
+  .landing-page .row .rating .guru {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .landing-page .row .rating .best-tech {
+    margin-left: 6rem;
+  }
+  .landing-page .row .colton,
+  .landing-page .row .irene,
+  .landing-page .row .anne {
+    max-height: 15.625rem;
+  }
+  .landing-page .row .colton {
+    margin-bottom: 2rem;
+  }
+  .landing-page .row .irene {
+    margin-top: 1rem;
+  }
+  .landing-page .row .anne {
+    margin-top: 2rem;
+    margin-bottom: -0.5rem;
+  }
+}
+
+@media screen and (min-width: 76.5625rem) {
+  .landing-page {
+    min-height: 100vh;
+    margin: 4rem auto 0;
+  }
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #502050;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+footer .attribution {
+  color: white;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer .attribution a {
+  color: #ee68a4;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 33.75rem) {
+  footer .attribution {
+    max-width: 70%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

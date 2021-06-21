@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
 // primary colors
 $Very-Dark-Magenta: hsl(300, 43%, 22%);
@@ -10,203 +10,210 @@ $Light-Grayish-Magenta: hsl(300, 24%, 96%);
 $White: hsl(0, 0%, 100%);
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Spartan", sans-serif;
-  line-height: 1.35;
+	font-family: 'Spartan', sans-serif;
+	line-height: 1.35;
 }
 
 // global style
 
 h1,
 span {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 h1 {
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 p {
-  font-weight: 400;
+	font-weight: 400;
 }
 span {
-  font-size: 0.9rem;
+	font-size: 0.9rem;
 }
 
 // starts here
 .landing-page {
-  width: 90%;
-  margin: 4rem auto;
-  text-align: center;
+	width: 90%;
+	margin: 4rem auto;
+	text-align: center;
 
-  .row {
-    .intro {
-      h1 {
-        color: $Very-Dark-Magenta;
-        margin-bottom: 1.5rem;
-      }
-      p {
-        color: $Dark-Grayish-Magenta;
-        margin-bottom: 2rem;
-        font-weight: 500;
-      }
-    }
+	background: url(./images/bg-pattern-top-mobile.svg) left top no-repeat,
+		url(./images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
 
-    .rating {
-      margin-bottom: 2.5rem;
+	.row {
+		.intro {
+			h1 {
+				color: $Very-Dark-Magenta;
+				margin-bottom: 1.5rem;
+			}
+			p {
+				color: $Dark-Grayish-Magenta;
+				margin-bottom: 2rem;
+				font-weight: 500;
+			}
+		}
 
-      .rates {
-        padding: 1rem 3rem;
-        margin-bottom: 1rem;
-        background-color: $Light-Grayish-Magenta;
+		.rating {
+			margin-bottom: 2.5rem;
 
-        .star {
-          margin-bottom: 0.5rem;
-          img {
-            margin: 0 0.15rem;
-          }
-        }
-        .rate {
-          color: $Very-Dark-Magenta;
-        }
-      }
-    }
+			.rates {
+				padding: 1rem 3rem;
+				margin-bottom: 1rem;
+				background-color: $Light-Grayish-Magenta;
 
-    // same value style
-    .rates,
-    .testimonial {
-      border-radius: 0.5rem;
-    }
+				.star {
+					margin-bottom: 0.5rem;
+					img {
+						margin: 0 0.15rem;
+					}
+				}
+				.rate {
+					color: $Very-Dark-Magenta;
+				}
+			}
+		}
 
-    // row 2
-    .testimonial {
-      background-color: $Very-Dark-Magenta;
-      padding: 2rem;
-      margin-bottom: 1rem;
+		// same value style
+		.rates,
+		.testimonial {
+			border-radius: 0.5rem;
+		}
 
-      .user {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1.5rem;
+		// row 2
+		.testimonial {
+			background-color: $Very-Dark-Magenta;
+			padding: 2rem;
+			margin-bottom: 1rem;
 
-        img {
-          width: 2.5rem;
-          margin-right: 1.3rem;
-          border-radius: 50%;
-          box-shadow: 0 0 0.5rem 0 $Soft-Pink;
-        }
-        .info {
-          h4 {
-            color: white;
-            margin-bottom: 0.2rem;
-          }
-          p {
-            color: $Soft-Pink;
-            font-size: 0.85rem;
-          }
-        }
-      }
+			.user {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1.5rem;
 
-      .testi {
-        text-align: left;
-        p {
-          color: $White;
-          font-size: 0.95rem;
-          line-height: 1.6;
-        }
-      }
-    }
+				img {
+					width: 2.5rem;
+					margin-right: 1.3rem;
+					border-radius: 50%;
+					box-shadow: 0 0 0.5rem 0 $Soft-Pink;
+				}
+				.info {
+					h4 {
+						color: white;
+						margin-bottom: 0.2rem;
+					}
+					p {
+						color: $Soft-Pink;
+						font-size: 0.85rem;
+					}
+				}
+			}
 
-    @media screen and (min-width: 76.5625rem) {
-      display: flex;
-      gap: 1.5rem;
-      text-align: left;
-      margin: 0 auto;
-      .intro,
-      .rating {
-        flex: 1;
-      }
+			.testi {
+				text-align: left;
+				p {
+					color: $White;
+					font-size: 0.95rem;
+					line-height: 1.6;
+				}
+			}
+		}
 
-      .intro {
-        h1 {
-          font-size: 2rem;
-          line-height: 1.1;
-        }
-      }
+		@media screen and (min-width: 76.5625rem) {
+			display: flex;
+			gap: 1.5rem;
+			text-align: left;
+			margin: 0 auto;
 
-      .rating {
-        .rates {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+			background: url('./images/bg-pattern-top-desktop.svg') left top no-repeat,
+				url('./images/bg-pattern-bottom-desktop.svg') right bottom no-repeat;
 
-          .star {
-            margin: 0 0.8rem 0 0;
-            img {
-              margin: 0 0.1rem 0 0;
-            }
-          }
-        }
+			.intro,
+			.rating {
+				flex: 1;
+			}
 
-        .review {
-          margin-right: 6rem;
-        }
-        .guru {
-          margin-left: 3rem;
-          margin-right: 3rem;
-        }
-        .best-tech {
-          margin-left: 6rem;
-        }
-      }
+			.intro {
+				h1 {
+					font-size: 2rem;
+					line-height: 1.1;
+				}
+			}
 
-      .colton,
-      .irene,
-      .anne {
-        max-height: 15.625rem;
-      }
+			.rating {
+				.rates {
+					display: flex;
+					align-items: center;
+					justify-content: center;
 
-      .colton {
-        margin-bottom: 2rem;
-      }
-      .irene {
-        margin-top: 1rem;
-      }
-      .anne {
-        margin-top: 2rem;
-        margin-bottom: -0.5rem;
-      }
-    }
-  }
+					.star {
+						margin: 0 0.8rem 0 0;
+						img {
+							margin: 0 0.1rem 0 0;
+						}
+					}
+				}
 
-  @media screen and (min-width: 76.5625rem) {
-    min-height: 100vh;
-    margin: 4rem auto 0;
-  }
+				.review {
+					margin-right: 6rem;
+				}
+				.guru {
+					margin-left: 3rem;
+					margin-right: 3rem;
+				}
+				.best-tech {
+					margin-left: 6rem;
+				}
+			}
+
+			.colton,
+			.irene,
+			.anne {
+				max-height: 15.625rem;
+			}
+
+			.colton {
+				margin-bottom: 2rem;
+			}
+			.irene {
+				margin-top: 1rem;
+			}
+			.anne {
+				margin-top: 2rem;
+				margin-bottom: -0.5rem;
+			}
+		}
+	}
+
+	@media screen and (min-width: 76.5625rem) {
+		min-height: 100vh;
+		margin: 4rem auto 0;
+	}
 }
 
 footer {
-  width: 100%;
-  padding: 1rem;
-  background-color: $Very-Dark-Magenta;
-  border-radius: 0.5rem 0.5rem 0 0;
-  .attribution {
-    color: $White;
-    font-size: 0.85rem;
-    line-height: 1.8;
-    text-align: center;
-    margin: 0 auto;
-    a {
-      color: $Soft-Pink;
-      text-decoration: none;
-    }
+	width: 100%;
+	padding: 1rem;
+	background-color: $Very-Dark-Magenta;
+	border-radius: 0.5rem 0.5rem 0 0;
+	.attribution {
+		color: $White;
+		font-size: 0.85rem;
+		line-height: 1.8;
+		text-align: center;
+		margin: 0 auto;
+		a {
+			color: $Soft-Pink;
+			text-decoration: none;
+		}
 
-    @media screen and (max-width: 33.75rem) {
-      max-width: 70%;
-    }
-  }
+		@media screen and (max-width: 33.75rem) {
+			max-width: 70%;
+		}
+	}
 }
